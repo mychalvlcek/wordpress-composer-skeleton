@@ -1,0 +1,5 @@
+.DS_Store
+/vendor/
+/www/wordpress/
+/www/wp-config.php
+/www/wp-content/uploads/

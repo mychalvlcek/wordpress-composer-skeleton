@@ -1,0 +1,26 @@
+{
+	"name": "vlcekmi3/wordpress-composer-skeleton",
+	"description": "Composer skeleton for wordpress",
+	"homepage": "https://github.com/vlcekmi3/wordpress-composer-skeleton",
+	"keywords": ["composer", "wordpress", "wp-config"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Michal Vlček",
+			"email": "mychalvlcek@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4",
+		"johnpbloch/wordpress": "4.2.2",
+		"vlcekmi3/wordpress-composer-autoinstall": "dev-master"
+	},
+	"scripts" : {
+		"post-package-install" : [
+			"WP\\WPAutoinstall\\WPAutoinstall::postPackageInstall"
+		]
+	},
+	"extra": {
+		"wordpress-install-dir": "www/wordpress"
+	}
+}
