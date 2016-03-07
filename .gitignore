@@ -1,5 +1,7 @@
-.DS_Store
-/vendor/
-/www/wordpress/
 /www/wp-config.php
-/www/wp-content/uploads/
+/www/wordpress/
+/www/wp-content/*
+!/www/wp-content/themes
+/vendor/*
+.htaccess
+index.php

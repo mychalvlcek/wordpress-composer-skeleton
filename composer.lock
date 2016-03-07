@@ -4,8 +4,107 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a71e81154f56768648249cca69a9709",
+    "hash": "e39a7c97876f49b034bbcd5412207f24",
+    "content-hash": "adc0e881080fd3d85bb74add2563fc9a",
     "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2016-01-27 12:54:22"
+        },
         {
             "name": "johnpbloch/wordpress",
             "version": "4.2.2",
@@ -92,17 +191,50 @@
             "time": "2015-06-11 15:15:30"
         },
         {
+            "name": "koprivajakub/blank-wp-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koprivajakub/blank-wp-theme.git",
+                "reference": "c76aba4e9168dc3853e9083b28ce6c4afd5fe749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koprivajakub/blank-wp-theme/zipball/c76aba4e9168dc3853e9083b28ce6c4afd5fe749",
+                "reference": "c76aba4e9168dc3853e9083b28ce6c4afd5fe749",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "wp-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Kopriva",
+                    "email": "kopriva.jakub@gmail.com",
+                    "homepage": "https://github.com/koprivajakub"
+                }
+            ],
+            "description": "Blank theme with all requirements for custom theme styling.",
+            "homepage": "https://github.com/koprivajakub/blank-wp-theme",
+            "time": "2016-03-04 16:33:13"
+        },
+        {
             "name": "vlcekmi3/wordpress-composer-autoinstall",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlcekmi3/wordpress-composer-autoinstall.git",
-                "reference": "3b50425d08684e54754901ea8c0dc2f9069dd8b8"
+                "reference": "08556d52354cd1a83329baecc913a88af9f70bb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlcekmi3/wordpress-composer-autoinstall/zipball/3b50425d08684e54754901ea8c0dc2f9069dd8b8",
-                "reference": "3b50425d08684e54754901ea8c0dc2f9069dd8b8",
+                "url": "https://api.github.com/repos/vlcekmi3/wordpress-composer-autoinstall/zipball/08556d52354cd1a83329baecc913a88af9f70bb9",
+                "reference": "08556d52354cd1a83329baecc913a88af9f70bb9",
                 "shasum": ""
             },
             "require": {
@@ -131,14 +263,37 @@
                 "wordpress",
                 "wp-config"
             ],
-            "time": "2015-07-15 07:08:38"
+            "time": "2015-07-16 19:36:43"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/",
+            "time": "2016-01-10 22:19:34"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "vlcekmi3/wordpress-composer-autoinstall": 20
+        "vlcekmi3/wordpress-composer-autoinstall": 20,
+        "koprivajakub/blank-wp-theme": 20,
+        "wpackagist-plugin/advanced-custom-fields": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
