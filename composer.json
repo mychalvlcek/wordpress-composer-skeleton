@@ -1,28 +1,28 @@
 {
-	"require": {
-		"php": ">=5.4",
-		"johnpbloch/wordpress": "4.2.2",
-		"vlcekmi3/wordpress-composer-autoinstall": "dev-master",
-		"koprivajakub/blank-wp-theme": "1.0.x"
-	},
-	"repositories":[
+    "require": {
+        "php": ">=5.6",
+        "johnpbloch/wordpress": "4.5.1",
+        "vlcekmi3/wordpress-composer-autoinstall": "dev-master",
+        "koprivajakub/blank-wp-theme": "1.0.x"
+    },
+    "repositories":[
         {
             "type":"composer",
-            "url":"http://wpackagist.org"
+            "url":"https://wpackagist.org"
         }
     ],
-	"scripts" : {
-		"post-install-cmd" : [
-			"WP\\WPAutoinstall\\WPAutoinstall::configBuild"
-		]
-	},
-	"extra": {
-		"wordpress-install-dir": "www/wordpress",
-		"blank-theme-dir": "vendor/koprivajakub/blank-wp-theme/src",
-		"installer-paths": {
+    "scripts" : {
+        "post-install-cmd" : [
+            "WP\\WPAutoinstall\\WPAutoinstall::configBuild"
+        ]
+    },
+    "extra": {
+        "wordpress-install-dir": "www/wordpress",
+        "blank-theme-dir": "vendor/koprivajakub/blank-wp-theme/src",
+        "installer-paths": {
             "www/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "www/wp-content/themes/{$name}/": ["type:wordpress-theme"],
             "www/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"]
         }
-	}
+    }
 }
